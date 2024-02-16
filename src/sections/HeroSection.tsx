@@ -1,7 +1,7 @@
 export default function HeroSection() {
   return (
-    <section className="flex justify-center min-h-svh w-full p-1 bg-whitePrimary font-s1 text-blackPrimary">
-      <div className="relative flex flex-col w-11/12 pt-2 gap-1 md:pt-5 md:gap-0">
+    <section className="flex justify-center min-h-svh w-full p-1 pb-0 bg-whitePrimary font-s1 text-blackPrimary">
+      <div className="relative flex flex-col w-11/12 max-w-[1650px] pt-2 gap-1 md:pt-5 md:gap-0">
         {/* top container */}
         <div className="flex w-full justify-center uppercase md:justify-between">
           <p className="hidden md:flex font-s5 text-8xl">20</p>
@@ -15,7 +15,7 @@ export default function HeroSection() {
         </div>
 
         {/* second container */}
-        <div className="flex uppercase items-center justify-center md:justify-between">
+        <div className="flex uppercase items-center justify-center gap-10 md:justify-between">
           <img className="hidden w-24 md:flex" src="/svgs/globe.svg" />
           <div className="hidden md:flex w-1/4">
             <span className="border border-blackPrimary w-full min-w-2"></span>
@@ -51,9 +51,9 @@ export default function HeroSection() {
         </div>
 
         {/* bottom bar */}
-        <div className="absolute flex flex-col text-xs bottom-0 w-full h-24 items-center md:text-xl z-10 bg-whitePrimary">
-          <p className="font-s5 font-[14px] md:hidden">Scroll down for more</p>
-          <div className="flex w-full h-1/2 items-center justify-between md:h-full">
+        <div className="absolute flex flex-col justify-center text-xs bottom-0 w-full h-24 items-center md:text-sm xl:text-sm 2xl:text-xl z-10 bg-whitePrimary">
+          <p className="font-s5 font-[14px] lg:hidden">Scroll down for more</p>
+          <div className="flex w-full h-1/2 items-center justify-between gap-1 lg:gap-5 lg:h-full">
             <div className="flex gap-4">
               <div className="uppercase items-center">
                 <p className="font-s3">spot</p>
@@ -62,12 +62,12 @@ export default function HeroSection() {
               <img src="/svgs/copyright.svg" />
             </div>
             <p className="tracking-tighter font-s5 font-black">アニッシュ</p>
-            <div className="flex max-w-52 md:min-w-80">
+            <div className="flex flex-1 mx-1 lg:min-w-50">
               <span className="border border-blackPrimary w-full min-w-5"></span>
             </div>
-            <p className="hidden md:flex font-s5">Scroll down for more</p>
-            <img className="w-10 flex md:hidden" src="/svgs/globe.svg" />
-            <div className="flex max-w-52 min-w-5 md:min-w-80">
+            <p className="hidden lg:flex font-s5">Scroll down for more</p>
+            <img className="w-10 flex lg:hidden" src="/svgs/globe.svg" />
+            <div className="flex min-w-5 flex-1 mx-1 lg:min-w-50">
               <span className="border border-blackPrimary w-full min-w-2"></span>
             </div>
             <span className="bg-blackPrimary rounded-full px-2">
